@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	border:none;
+}
+
+#li4{
+	color:rgba(255,204,0,1);
+}
+
+.main{
+	width:100%;
+}

@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+.p22{
+	width:100%;
+	height:3em;
+	display:block;
+	margin:auto;
+	text-align:center;
+	margin-top:1.5em;
+	padding:0.2em 0em;
+}
+
+.p33{
+	width:100%;
+	display:block;
+	margin:auto;
+	background:rgba(204,255,255,1);
+	padding-bottom:0.2em;
+}
+
+.p22 p{
+	font-size:25px;
+	margin:0;
+}
+
+.tb1{
+	width:100%;
+	margin:auto;
+	border-collapse:collapse;
+}
+
+.tb1 tr{
+	border-bottom:1px solid rgba(255,255,204,1);
+}
+.tb th{
+	padding:0.7em 0.4em; font-size:15px;
+}
+.tb1 td{
+	 padding:0.5em 0.4em;
+	 text-align:left;
+	 font-size:13px;
+}
+
+#li4{
+	color:rgba(255,204,0,1);font-weight:bolder;
+}

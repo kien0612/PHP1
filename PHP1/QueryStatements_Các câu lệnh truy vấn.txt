@@ -1,0 +1,51 @@
+-------------------- CÁC CÂU LỆNH / PHƯƠNG THỨC TRUY VẤN PHP ---------------------------
+
+1. exec():
+    - Phương thức exec() trong PHP được sử dụng để thực thi một lệnh được chỉ định trong hệ thống và trả về kết quả cuối cùng của lệnh đó.
+    - exec() sử dụng trong các trường hợp đơn giản và lệnh thực hiện một lần không cần sử dụng các tham số động.
+    - Kết quả trả về sẽ bao gồm tất cả các dòng của lệnh được thực thi, hoặc trả về giá trị cuối cùng hoặc trạng thái trả về của hệ thống.
+    
+    Ưu điểm:
+        - Dễ tiếp cận và sử dụng.
+        - Cho phép thực thi các lệnh hệ thống và trả về kết quả đơn giản.
+
+    Nhược điểm:
+        - Không được tối ưu và linh hoạt khi xử lý và trả về kết quả.
+        - Không an toàn vì cho phép thực thi các lệnh đã được truyền vào một cách trực tiếp.
+-------------------------------------------------------------------------------------------------------------------
+2. execute():
+    - execute() đóng vai trò quan trọng trong PDO (PHP Data Object) và được sử dụng để thực thi một câu lệnh SQL truy vấn được chuẩn bị trước. 
+    - execute () chứa tất cả các giá trị được gán dưới dạng tham số trong câu lệnh và thực thi chúng.
+    - Nó có thể sử dụng trong các trường hợp phức tạp và các lệnh được thực hiện nhiều lần.
+
+    Ưu điểm:
+        - An toàn và tối ưu hơn exec() bởi vì nó sử dụng các câu lệnh được chuẩn bị trước và chứa các giá trị tham số.
+        - Có thể xử lý các truy vấn trả về kết quả chi tiết hơn.
+
+    Nhược điểm:
+        - Không tương thích với một số cơ sở dữ liệu khác nhau.
+        - Có thể phức tạp hơn như cần phải chuẩn bị trước các truy vấn SQL.
+-------------------------------------------------------------------------------------------------------------------
+3. prepare():
+    - Phương thức truy vấn prepare() chuẩn bị một câu lệnh SQL truy vấn được chuẩn bị trước và trả về một đối tượng truy vấn PDO.
+    - prepare() không chứa bất kỳ giá trị nào được thực thi trong câu lệnh SQL.
+    - Nó được sử dụng để chuẩn bị câu lệnh truy vấn để được thực thi nhiều lần với các giá trị tham số khác nhau.
+
+    Ưu điểm:
+        - An toàn và tối ưu hơn exec() và execute() bởi vì nó chỉ chuẩn bị các câu lệnh truy vấn.
+        - Được sử dụng để chuẩn bị các truy vấn SQL để được thực thi nhiều lần với các giá trị tham số khác nhau.
+
+    Nhược điểm:
+        - Tương đối phức tạp khi cần chuẩn bị trước các truy vấn SQL.
+-------------------------------------------------------------------------------------------------------------------
+4. query():
+    - query() được sử dụng để thực thi một câu lệnh SQL truy vấn và trả về một bộ kết quả PDOStatement.
+    - query() dùng cho các trường hợp đơn giản và lệnh thực hiện một lần không cần truyền các tham số động.
+    - Nó không hỗ trợ gửi các lệnh truy vấn chứa giá trị tham số.
+
+    Ưu điểm:
+        - Dễ dàng và tiện lợi khi sử dụng cho các truy vấn SQL đơn giản.
+
+    Nhược điểm:
+        - Chỉ được sử dụng cho các truy vấn SQL đơn giản không chứa các giá trị tham số.
+        - Có thể không an toàn nếu không được sử dụng đúng cách.

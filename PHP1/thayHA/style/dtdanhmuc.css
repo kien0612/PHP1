@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+/*body{background:white;margin:0;}*/
+.htdanhsach{width:100%; border-bottom:1px solid black;}
+
+.ttb1,.ttb1 td,.ttb1 th{border:1px solid rgba(187,187,187,1);}
+.ttb1{border-collapse:collapse;width:97%;margin-left:1em;font-size:14px;}
+.ttb1 td{border-left:none;border-right:none;}
+.ttb1 tr:hover{cursor:default;background:rgba(0,102,153,0.1);}
+.ttb1 th{height:22px;}
+.ttb2,.ttb2 td,.ttb2 th{border:1px solid rgba(187,187,187,1);}
+.ttb2{border-collapse:collapse;width:97%;margin-left:1em;font-size:14px;}
+.ttb2 td{border-left:none;border-right:none;}
+.ttb2 tr:hover{cursor:default;background:rgba(0,102,153,0.1);}
+.ttb2 th{height:22px;}
+
+.ttb1 tr:nth-child(even){background-color:white;}
+.ttb1 tr:nth-child(odd){background-color:#f1f1f1;}
+.ttb2 tr:nth-child(even){background-color:white;}
+.ttb2 tr:nth-child(odd){background-color:#f1f1f1;}
+
+.chitiet{background:white;width:100%;float:left;margin-bottom:1em;}
+.csbd{margin-top:0.5em;}
+.kieudm{ padding-top:1em; width:100%; height:3.8em; background:rgba(221,221,221,0.3); color:black;} 
+.thaotac{width:60%; padding-bottom:1em; padding-top:1em;}

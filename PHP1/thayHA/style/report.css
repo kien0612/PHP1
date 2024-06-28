@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0;
+	background:rgba(153,255,204,0.9);
+	font-family:Arial,Helvetica,sans-serif;
+}
+.examcontent_p1{
+	width:23.6%;
+	height:40em;
+	background:white;
+	float:right;
+	top:0;
+	right:0;
+	position:fixed;
+	padding:0em 0.5em;
+	overflow:auto;
+}
+.examcontent_p2{
+	margin-left:0.4em;
+	padding-right:0.4em;
+	width:73.5%;
+	float:left;
+	background:white;
+	overflow:auto;
+	padding-top:0.3em;
+	padding-left:0.4em;
+	padding-bottom:1em;
+}
+.areaexam{
+	width:98.8%;
+	display:block;
+	margin:auto;
+	border-bottom:2px solid rgba(153,255,0,1);
+}
+.cauhoi{
+	width:48.7%;padding:0.4em;font-family:Helvetica,sans-serif;font-size:15px;margin-top:1em; margin-bottom:0.2em;
+}
+.tencauhoi{
+	background:white;margin-top:0.5em;padding:1em;border-bottom:1px dashed rgba(170,170,170,0.3);font-family:Helvetica,sans-serif;font-size:15px;
+}
+.dapan{
+	background:white;padding:1em 1em;font-size:13px;font-family:Helvetica,sans-serif;
+}
+label{
+	cursor:pointer;
+} 
+.dscauhoi{
+	width:97.5%;height:auto;background:white;display:block;margin:auto;margin-left:0.25em;margin-top:0.3em;border-bottom:3px solid rgba(153,255,0,1); padding-bottom:1em;
+}
+.tablekq{border-collapse:collapse; width:100%;}
+.tablekq td,th{
+	padding:0.5em;
+	text-align:center;
+}
+.tabledapan{border-collapse:collapse; width:100%;}
+.tabledapan td,.tabledapan th{padding:0.5em;text-align:center;width:50%; text-transform:none; line-height:1.5em;}
+.tabledapan td{vertical-align:left; text-align:left; padding: 0.7em 0.4em;}
+#redu{
+	width:97%;
+	display:block;
+	margin:auto;
+	margin-top:2em;
+	padding:0.5em 0.2em;
+	border:none;
+	background:white;
+	cursor:pointer;
+	font-size:16px;
+	border-bottom:3px solid rgba(102,0,102,0.8);
+	color:rgba(255,153,0,1);
+}
+#redu:hover{background:rgba(51,255,153,0.3); transition:0.5s;}
+.socau{padding-top:0.3em;background:red;margin:2px;margin-left:4px;float:left;width:2em;height:1.8em;font-size:13px;text-align:center; color:white;cursor:pointer;}
+.socau:hover{text-decoration:underline;}
+.tongdiem{
+	width:99%;
+	/*height:11em;*/
+	display:block;
+	margin:auto;
+	font-size:16px;
+	margin-bottom:2em;
+	padding-top:0.5em;
+	padding-bottom:1em;
+}
+a{
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+	color:red;
+}
